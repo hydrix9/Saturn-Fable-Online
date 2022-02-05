@@ -164,3 +164,5 @@ Possible values to modify:
           }
 
         } //end talent T_WarriorIncreasedDamagevsImmobilized
+
+The reason why this works is because C# is extremely well optimized for empty functions. Therefore, it doesn't take a lot of performance to loop over every possible modifier to the spellHit on both attacker and defender. It also allows you to recycle code between talents, spells, and gear.
